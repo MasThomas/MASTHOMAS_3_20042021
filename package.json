@@ -1,0 +1,19 @@
+{
+  "name": "Ohmyfood",
+  "version": "1.0.0",
+  "description": "Ohmyfood, réservez le menu qui vous convient",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasThomas/MASTHOMAS_3_20042021.git"
+  },
+  "author": "Thomas Mas",
+  "license": "ISC",
+  },
+  "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme",
+  "browserslist": "last 4 versions"
+}
