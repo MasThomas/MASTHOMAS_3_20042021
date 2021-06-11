@@ -1,3 +1,46 @@
+::placeholder {
+  color: #000000;
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1;
+  /* Firefox */
+  font-weight: 500;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 1em 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 65px;
+  width: 100%;
+}
+.location input {
+  margin: auto;
+  background-color: #eaeaea;
+  border: none;
+  height: 40%;
+  width: 150px;
+  font-size: 1.1em;
+}
+.location i {
+  font-size: 1.1em;
+  padding: 0 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */
