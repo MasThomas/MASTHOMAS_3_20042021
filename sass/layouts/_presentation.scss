@@ -2,9 +2,14 @@
     background-color: $bg-grey;
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
-    h1, p {
+    padding: 20px;
+    h1 {
         text-align: center;
+        margin: 20px 0;
+    }
+    p {
+        text-align: center;
+        margin: 0;
     }
     .btn {
         align-self: center;
