@@ -11,8 +11,18 @@ html, body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 html {
   font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  margin: 50px 0 30px 20px;
+  font-size: 1.6em;
 }
 
 .btn {
@@ -87,13 +97,9 @@ header {
   display: flex;
   flex-direction: column;
 }
-.fonctionnement h2 {
-  margin: 50px 0 30px 20px;
-  font-size: 1.6em;
-}
 .fonctionnement i {
   color: #7e7e7e;
-  padding: 0 30px 0 20px;
+  padding: 0 0.8em 0 0.5em;
   line-height: 70px;
 }
 .fonctionnement .btn-alt--order {
@@ -131,6 +137,38 @@ header {
 .presentation .btn {
   align-self: center;
   padding: 10px 0;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.restaurants_card {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 85%;
+  background-color: #ffffff;
+  margin: 10px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px #f2f2f2;
+}
+.restaurants_card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants_card--txt {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  justify-content: center;
+  width: 180px;
+}
+.restaurants_card--name {
+  margin: 15px 0 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
