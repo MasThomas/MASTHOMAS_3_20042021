@@ -6,13 +6,25 @@
     &_card {
         display: flex;
         flex-direction: column;
-        height: 180px;
+        height: 251px;
         width: 85%;
         background-color: $bg-white;
         margin: 10px auto;
         border-radius: 20px;
         box-shadow: 0 0 10px 5px #f2f2f2;
+        &--new {
+            display: block;
+            position: absolute;
+            margin: 1em 0 0 12em;
+            width: 80px;
+            height: 30px;
+            background-color: $clr-tertiary;
+            text-align:center;
+            line-height: 30px;
+            font-size: 0.9em;
+        }
         img {
+            height: 174px;
             width: 100%;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
@@ -20,12 +32,20 @@
         &--txt {
             display: flex;
             flex-direction: row;
-            margin-left: 10px;
-            justify-content: center;
-            width: 180px;
+            justify-content: space-between;
+            height: 77px;
+        }
+        &--p {
+            padding: 15px 0 0 10px;
+            p {
+                margin: 0 0 5px 3px;
+            }
         }
         &--name {
-            margin: 15px 0 10px 0;
+            font-weight: bolder;
         }
+    }
+    .fa-heart {
+        padding: 30px 15px 0 0;
     }
 }
