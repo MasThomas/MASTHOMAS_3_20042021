@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
     <title>OhMyFood, Réservez le menu qui vous convient</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
@@ -15,76 +15,81 @@
 
   <body>
         <header>
-            <a href="__index.html"><i class="fas fa-arrow-left"></i></a>
-            <img class="logo" src="/Maquettes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
+            <a href="__index.html"><i class="fas fa-arrow-left fa-lg"></i></a>
+            <img class="logo" src="/public/img/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
         </header>
 
         <div class="bg-img">
-            <img src="/Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Restaurant La palette du goût">
+            <img src="/public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo Restaurant La palette du goût">
         </div>
 
         <section class="menu">
-            <h1>La palette du goût</h1>
+            <span class="menu--title">
+                <h1>La palette du goût</h1>
+                <i class="far fa-heart fa-lg"></i>
+            </span>
 
-            <h3>Entrées</h3>
+
+            <h2>ENTRÉES</h2>
             <div class="menu_items">
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Tartare de poulpe acidulé</p>
                     <p>Aux zests d'orange</p>
                     <p>25 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Velouté de légumes d'antan</p>
                     <p>Carotte, panais, topinambour</p>
                     <p>35 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Soupe à l'oignon</p>
                     <p>Revisitée</p>
                     <p>20 €</p>
                 </div>
             </div>
 
-            <h3>Plats</h3>
+            <h2>PLATS</h2>
             <div class="menu_items">
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Coquilles Saint-Jacques</p>
                     <p>Accompagnées d'une purée de panais</p>
                     <p>40 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Magret de canard</p>
                     <p>Et parmentier de pommes de terres</p>
                     <p>35 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Pigeonneau d'Ille-et-Villaine</p>
                     <p>Sur son lit de gnocchis aux légumes</p>
                     <p>44 €</p>
                 </div>
 
-            <h3>Desserts</h3>
+            <h2>DESSERTS</h2>
             <div class="menu_items">
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Pétales de violettes glacées</p>
                     <p>Et purée de noisettes</p>
                     <p>18 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Fondant au chocolat</p>
                     <p>Revisité</p>
                     <p>22 €</p>
                 </div>
-                <div class="btn--alt">
+                <div class="btn-alt__white">
                     <p>Millefeuille croustillant</p>
                     <p>Myrtilles et pâte d'amande</p>
                     <p>23 €</p>
                 </div>
+                <div class="order">
+                    <button class="btn">Commander</button>
+                </div>
         </section>
 
-        <div class="order">
-            <button class="btn">Commander</button>
-        </div>
+
         <footer>
             <p>ohmyfood</p>
             <ul>
