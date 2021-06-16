@@ -16,6 +16,12 @@ a {
   color: #000000;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -190,6 +196,26 @@ header {
 }
 .restaurants .fa-heart {
   padding: 30px 15px 0 0;
+}
+
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 10px 0 20px 30px;
+}
+footer p {
+  font-family: Shrikhand;
+  font-size: 1.1em;
+}
+footer a {
+  color: #ffffff;
+}
+footer li {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+footer i {
+  padding: 0 10px 0 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
