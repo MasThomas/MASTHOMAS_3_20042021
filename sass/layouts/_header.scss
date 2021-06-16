@@ -2,5 +2,10 @@ header {
     background-color: $bg-white;
     display: flex;
     justify-content: center;
-    margin: 2em 0 1em 0;
+    padding: 2em 0 1em 0;
+    i {
+        position: absolute;
+        left: 1em;
+        top: 1.9em;
+    }
 }
