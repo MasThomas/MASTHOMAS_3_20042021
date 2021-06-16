@@ -74,7 +74,12 @@ header {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  margin: 2em 0 1em 0;
+  padding: 2em 0 1em 0;
+}
+header i {
+  position: absolute;
+  left: 1em;
+  top: 1.9em;
 }
 
 .location {
@@ -216,6 +221,11 @@ footer li {
 }
 footer i {
   padding: 0 10px 0 0;
+}
+
+.bg-img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
