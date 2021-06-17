@@ -31,6 +31,10 @@ h2 {
   font-size: 1.6em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, 60%, #9356DC);
   border: none;
@@ -250,8 +254,56 @@ footer i {
   font-weight: 300;
   font-size: 0.9em;
   border-bottom: solid #99E2D0;
-  width: 14%;
+  width: 9%;
   padding: 0 0 5px 0;
+}
+.menu .btn-alt__white {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .btn-alt__white .menu--check {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 13px;
+}
+.menu .btn-alt__white .menu--check i {
+  color: #ffffff;
+}
+.menu .btn-alt__white .menu--txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+.menu .btn-alt__white .menu--txt p {
+  width: 100%;
+  margin: 0;
+  padding: 7px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .btn-alt__white .menu--txt .menu--content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .btn-alt__white .menu--txt .menu--details_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .btn-alt__white .menu--txt .menu--details_price .menu--price {
+  padding: 0 15px 0 0;
+  width: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

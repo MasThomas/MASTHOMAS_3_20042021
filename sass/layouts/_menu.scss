@@ -18,7 +18,56 @@
         font-weight: 300;
         font-size: 0.9em;
         border-bottom: solid $clr-tertiary;
-        width: 14%;
+        width: 9%;
         padding: 0 0 5px 0;
+    }
+    .btn-alt__white {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .menu--check {
+            background-color: $clr-tertiary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 0 13px;
+            i {
+                color: #ffffff;
+            }
+        }
+        .menu--txt {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 0 0 0 10px;
+          width: 100%;
+            p {
+            width: 100%;
+            margin: 0;
+            padding: 7px 0;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            }
+        .menu--content {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .menu--details_price {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .menu--price {
+                padding: 0 15px 0 0;
+                width: 40px;
+            }
+        }
+        }
     }
 }
