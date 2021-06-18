@@ -8,22 +8,30 @@
         padding: 0 0.8em 0 0.5em;
         line-height: 70px ;
     }
-    .btn-alt--order {
-        display: block;
-        text-align: center;
-        background-color: $clr-primary;
-        color: #ffff;
-        width: 20px;
-        height: 20px;
-        padding: 3px 1.5px 0 1.5px;
-        border-radius: 20px;
-        left:-10px;
-        top: 25px;
-        position: relative;
-    }
 
-    .btn-alt--txt {
-        position: relative;
-        top: 0;
-    } 
+    .btn-alt {
+        &--order {
+            display: block;
+            text-align: center;
+            background-color: $clr-primary;
+            color: #ffff;
+            width: 20px;
+            height: 20px;
+            padding: 3px 1.5px 0 1.5px;
+            border-radius: 20px;
+            left:-10px;
+            top: 25px;
+            position: relative;
+        }
+
+        &--txt {
+            position: relative;
+            top: 0;
+        }
+        &:hover {
+            i {
+                color: $clr-primary;
+            }
+        }
+    }
 }
