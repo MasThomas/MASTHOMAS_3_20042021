@@ -135,6 +135,9 @@ header i {
   position: relative;
   top: 0;
 }
+.fonctionnement .btn-alt:hover i {
+  color: #9356DC;
+}
 
 .presentation {
   background-color: #f6f6f6;
@@ -304,6 +307,16 @@ footer i {
 .menu .btn-alt__white .menu--txt .menu--details_price .menu--price {
   padding: 0 15px 0 0;
   width: 40px;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.order .btn {
+  text-align: center;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
