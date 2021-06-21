@@ -53,7 +53,7 @@ h2 {
   max-width: 400px;
   color: #000000;
   border: none;
-  box-shadow: 0px 0px 10px 5px #eaeaea;
+  box-shadow: 0px 0px 10px 5px #f2f2f2;
   border-radius: 25px;
   margin: 15px auto;
   display: flex;
@@ -67,7 +67,7 @@ h2 {
   max-width: 400px;
   color: #000000;
   border: none;
-  box-shadow: 0px 0px 10px 5px #eaeaea;
+  box-shadow: 0px 0px 10px 5px #f2f2f2;
   border-radius: 15px;
   margin: 15px auto;
   display: flex;
@@ -135,6 +135,10 @@ header i {
   position: relative;
   top: 0;
 }
+.fonctionnement .btn-alt:hover {
+  background-color: #f5edff;
+  box-shadow: 0px 0px 10px 5px #eeeeee;
+}
 .fonctionnement .btn-alt:hover i {
   color: #9356DC;
 }
@@ -163,6 +167,7 @@ header i {
   flex-direction: column;
   justify-content: center;
   background-color: #f6f6f6;
+  padding: 0 0 30px 0;
 }
 .restaurants_card {
   display: flex;
@@ -175,6 +180,7 @@ header i {
   box-shadow: 0 0 10px 5px #f2f2f2;
 }
 .restaurants_card--new {
+  color: #008766;
   display: block;
   position: absolute;
   margin: 1em 0 0 12em;
@@ -207,7 +213,7 @@ header i {
   font-weight: bolder;
 }
 .restaurants .fa-heart {
-  padding: 30px 15px 0 0;
+  margin: 30px 15px 0 0;
 }
 
 footer {
