@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: $bg-grey;
+    padding: 0 0 30px 0;
     &_card {
         display: flex;
         flex-direction: column;
@@ -13,6 +14,7 @@
         border-radius: 20px;
         box-shadow: 0 0 10px 5px #f2f2f2;
         &--new {
+            color: #008766;
             display: block;
             position: absolute;
             margin: 1em 0 0 12em;
@@ -46,6 +48,37 @@
         }
     }
     .fa-heart {
-        padding: 30px 15px 0 0;
+        width: 35px;
+        height: 35px;
+        position: relative;
+    
+        &.far {
+            transform: scale(1);
+            font-size:30px;
+            position: absolute;
+            opacity: 1;
+            margin: 20px 0 0 -50px;
+            padding: 2px 0 0 0;
+        }
+        &.fas {
+            transition: transform 200ms ease-in-out;
+            font-size: 32px;
+            position: absolute;
+            display: block;
+            background-image: $clr-shading;
+            background-clip: text;
+            color: transparent;
+            visibility: visible;
+            opacity: 0;
+            margin: 20px 0 0 -51px;
+            padding: 2px 0 0 0;
+
+        } 
     }
 }
+        .fa-heart:hover {
+                animation: heart 500ms forwards;
+            &.far {
+                opacity: 0;
+            } 
+        }
