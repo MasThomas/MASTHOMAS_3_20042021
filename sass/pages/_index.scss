@@ -1,0 +1,18 @@
+.loading-spinner {
+    background-color: rgba(255, 255, 255, 0.726);
+    position: absolute;
+    margin: auto 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    animation: opacity 2000ms forwards;
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: $clr-primary;
+        animation: loading 3000ms forwards;
+    }
+}
