@@ -8,12 +8,13 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
     }
+
     h1 {
         font-family: Shrikhand;
         font-size: 1.5em
     }
+
     h2 {
         font-weight: 300;
         font-size: 0.9em;
@@ -21,50 +22,64 @@
         width: 9%;
         padding: 0 0 5px 0;
     }
-    .btn-alt__white {
-        justify-content: space-between;
-        .menu--check {
-            background-color: $clr-tertiary;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 10%;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            padding: 0 13px;
-            i {
-                color: #ffffff;
-            }
-        }
-        .menu--txt {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: 0 0 0 10px;
-          width: 100%;
-            p {
-            margin: 0;
-            padding: 7px 0;
-            white-space:nowrap;
-            overflow:hidden;
-            text-overflow: ellipsis;
-            }
-        .menu--content {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .menu--details_price {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            overflow: hidden;
-            text-overflow: ellipsis;
+}
 
-            .menu--price {
-                padding: 0 15px 0 0;
-                width: 40px;
+.btn-alt__white {
+    justify-content: space-between;
+    overflow: hidden;
+    &:hover {
+        .menu--check {
+            animation: check 800ms forwards;
+            i {
+                animation:rotating 500ms forwards;
             }
-        }
-        }
+        }  
+    }
+}
+
+.menu--check {
+    background-color: $clr-tertiary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 0 13px;
+    margin-right: -55px;
+    i {
+        color: #ffffff;
+    }
+}
+
+.menu--txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+
+.menu--content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    h3 {
+        padding-top: 10px;
+    }
+    p {
+        padding: 10px 0 0 0;
+        margin: 0;
+    }
+}
+
+.menu--details_price {
+    display: flex;
+    .menu--price {
+        padding: 0;
+        margin: 0;
+        width: 40px;
+        line-height: 95px;
     }
 }
