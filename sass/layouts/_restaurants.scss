@@ -72,13 +72,9 @@
             opacity: 0;
             margin: 20px 0 0 -51px;
             padding: 2px 0 0 0;
-
-        } 
+        }
+        &:hover {
+            animation: heart 500ms forwards;
+        }
     }
 }
-        .fa-heart:hover {
-                animation: heart 500ms forwards;
-            &.far {
-                opacity: 0;
-            } 
-        }
