@@ -26,6 +26,59 @@
     opacity: 1;
   }
 }
+@keyframes check {
+  from {
+    margin-right: -55px;
+  }
+  to {
+    margin-right: 0px;
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -53,6 +106,11 @@ h2 {
 
 .bold {
   font-weight: bold;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -259,11 +317,13 @@ header i {
   padding: 2px 0 0 0;
 }
 
-.fa-heart:hover {
+/*        .restaurants .fa-heart:hover {
+                animation: heart 500ms forwards;
+        }
+
+        */
+.restaurants .fa-heart:active {
   animation: heart 500ms forwards;
-}
-.fa-heart:hover.far {
-  opacity: 0;
 }
 
 footer {
@@ -318,23 +378,31 @@ footer i {
 }
 .menu .btn-alt__white {
   justify-content: space-between;
+  overflow: hidden;
+}
+.menu .btn-alt__white:hover .menu--check {
+  animation: check 800ms forwards;
+}
+.menu .btn-alt__white:hover .menu--check i {
+  animation: rotating 500ms forwards;
 }
 .menu .btn-alt__white .menu--check {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 30px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 0 13px;
+  margin-right: -55px;
 }
 .menu .btn-alt__white .menu--check i {
   color: #ffffff;
 }
 .menu .btn-alt__white .menu--txt {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 0 0 10px;
   width: 100%;
@@ -347,19 +415,16 @@ footer i {
   text-overflow: ellipsis;
 }
 .menu .btn-alt__white .menu--txt .menu--content {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
 }
 .menu .btn-alt__white .menu--txt .menu--details_price {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu .btn-alt__white .menu--txt .menu--details_price .menu--price {
-  padding: 0 15px 0 0;
+  padding: 0;
   width: 40px;
+  line-height: 70px;
 }
 
 .order {
@@ -370,6 +435,25 @@ footer i {
 .order .btn {
   text-align: center;
   line-height: 50px;
+}
+
+.loading-spinner {
+  background-color: rgba(255, 255, 255, 0.726);
+  position: absolute;
+  margin: auto 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 2000ms forwards;
+}
+.loading-spinner .box {
+  width: 100px;
+  height: 100px;
+  background-color: #9356DC;
+  animation: loading 3000ms forwards;
 }
 
 /*# sourceMappingURL=styles.css.map */
