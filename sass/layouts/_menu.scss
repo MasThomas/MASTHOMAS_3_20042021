@@ -30,10 +30,16 @@
     &:hover {
         .menu--check {
             animation: check 800ms forwards;
+            width: 60px;
             i {
-                animation:rotating 500ms forwards;
+                animation:rotate 500ms forwards;
             }
         }  
+    }
+    &::after:hover {
+        .menu--check {
+            animation: check-back 800ms forwards;
+        }
     }
 }
 
@@ -42,11 +48,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 50px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 0 13px;
-    margin-right: -55px;
+    margin-right: -80px;
     i {
         color: #ffffff;
     }
@@ -56,30 +62,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0 0 10px;
     width: 100%;
 }
 
 .menu--content {
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 15px 10px;
+    flex:1;
     h3 {
-        padding-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 500;
+        font-size: 1em;
+        padding-bottom: 3px;
     }
     p {
-        padding: 10px 0 0 0;
-        margin: 0;
+        margin: 0;    
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 300;
+        font-size: 0.9em;
     }
 }
 
-.menu--details_price {
-    display: flex;
-    .menu--price {
-        padding: 0;
-        margin: 0;
-        width: 40px;
-        line-height: 95px;
-    }
+.menu--price {
+    font-weight: 700;
+    margin: 35px 15px 15px 0;
 }

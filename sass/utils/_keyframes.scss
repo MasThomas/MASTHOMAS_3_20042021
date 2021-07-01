@@ -10,11 +10,17 @@
 
  @keyframes check
  {
-from {margin-right: -55px;}
+from {margin-right: -80px;}
 to {margin-right: 0px;}
  }
 
- @keyframes rotating
+ @keyframes check-back
+ {
+   from {margin-right: 0px;}
+   to {margin-right: -80px;}
+ }
+
+ @keyframes rotate
   {
     0% {transform: rotate(0deg)}
     40% {transform: rotate(0deg)}
