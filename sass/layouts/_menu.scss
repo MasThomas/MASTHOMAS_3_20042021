@@ -29,25 +29,12 @@
     overflow: hidden;
     &:hover {
         .menu--check {
-            transition-property: margin-right width;
-            transition-duration: 0.8s;
-            transition-timing-function: ease-in-out;
-            /* animation: check 800ms forwards; */ 
             margin-right: 0px;
             width: 60px;
             i {
-                /* animation:rotate 500ms forwards; */
-                transition-property: transform;
-                transition-duration: 0.6s;
-                transition-timing-function: ease-in;
                 transform: rotate(360deg);
             }
         }  
-    }
-    &::after:hover {
-        .menu--check {
-            animation: check-back 800ms forwards;
-        }
     }
 }
 
@@ -63,7 +50,13 @@
     margin-right: -80px;
     i {
         color: #ffffff;
+        transition-property: transform;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-in;
     }
+    transition-property: margin-right width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
 }
 
 .menu--txt {
