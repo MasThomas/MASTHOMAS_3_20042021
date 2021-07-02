@@ -47,34 +47,4 @@
             font-weight: bolder;
         }
     }
-    .fa-heart {
-        width: 35px;
-        height: 35px;
-        position: relative;
-    
-        &.far {
-            transform: scale(1);
-            font-size:30px;
-            position: absolute;
-            opacity: 1;
-            margin: 20px 0 0 -50px;
-            padding: 2px 0 0 0;
-        }
-        &.fas {
-            transition: transform 200ms ease-in-out;
-            font-size: 32px;
-            position: absolute;
-            display: block;
-            background-image: $clr-shading;
-            background-clip: text;
-            color: transparent;
-            visibility: visible;
-            opacity: 0;
-            margin: 20px 0 0 -51px;
-            padding: 2px 0 0 0;
-        }
-        &:hover {
-            animation: heart 500ms forwards;
-        }
-    }
 }
