@@ -7,7 +7,20 @@
     &--title {
         display: flex;
         justify-content: space-evenly;
+        flex-direction: row;
         align-items: center;
+        .fa-heart {
+            margin: 7px 0 0 0;
+            padding: 0;
+            &.icon--full {
+                position: relative;
+                padding-top: 2px;
+
+            }
+            &.icon--empty {
+                padding: 2px 0 0 1px
+            }
+        }
     }
 
     h1 {
