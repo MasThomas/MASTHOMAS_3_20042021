@@ -1,3 +1,46 @@
+.menu__load {
+  animation: load 3000ms;
+}
+.menu__load--1 {
+  animation: load 250ms ease-in-out forwards;
+}
+.menu__load--2 {
+  animation: load 500ms ease-in-out forwards;
+}
+.menu__load--3 {
+  animation: load 750ms ease-in-out forwards;
+}
+.menu__load--4 {
+  animation: load 1000ms ease-in-out forwards;
+}
+.menu__load--5 {
+  animation: load 1250ms ease-in-out forwards;
+}
+.menu__load--6 {
+  animation: load 1500ms ease-in-out forwards;
+}
+.menu__load--7 {
+  animation: load 1750ms ease-in-out forwards;
+}
+.menu__load--8 {
+  animation: load 2000ms ease-in-out forwards;
+}
+.menu__load--9 {
+  animation: load 2250ms ease-in-out forwards;
+}
+.menu__load--10 {
+  animation: load 2500ms ease-in-out forwards;
+}
+.menu__load--11 {
+  animation: load 2750ms ease-in-out forwards;
+}
+.menu__load--12 {
+  animation: load 3000ms ease-in-out forwards;
+}
+.menu__load--13 {
+  animation: load 3250ms ease-in-out forwards;
+}
+
 ::placeholder {
   color: #000000;
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -38,6 +81,15 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
   }
 }
 html, body {
@@ -132,7 +184,7 @@ h3 {
   opacity: 0;
   margin: 20px 0 0 -51px;
   padding: 2px 0 0 0;
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .fa-heart:hover {
   cursor: pointer;
@@ -369,11 +421,11 @@ footer i {
   border-bottom-right-radius: 15px;
   padding: 0 13px;
   margin-right: -80px;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .menu--check i {
   color: #ffffff;
-  transition: transform 0.6s ease-in;
+  transition: transform 0.3s ease-in;
 }
 
 .menu--txt {
@@ -388,7 +440,7 @@ footer i {
   margin: 15px 10px;
   flex: 1;
   width: 221px;
-  transition: width 0.8s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 .menu--content h3 {
   overflow: hidden;
