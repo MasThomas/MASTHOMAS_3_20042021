@@ -2,6 +2,11 @@ footer {
     background-color: $bg-black;
     color: #ffffff;
     padding: 10px 0 20px 30px;
+    @include media (576px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     p {
         font-family: Shrikhand;
         font-size: 1.1em
