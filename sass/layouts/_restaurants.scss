@@ -10,10 +10,16 @@
         height: 251px;
         width: 85%;
         background-color: $bg-white;
-        margin: 10px auto;
+        margin: 20px auto;
         border-radius: 20px;
         box-shadow: 0 0 10px 5px #f2f2f2;
         position: relative;
+        @include media (768px) {
+            width: 45%;
+        }
+        @include media (1200px) {
+            height: 310px;
+        }
         &--new {
             color: $clr-new;
             display: block;
@@ -32,6 +38,9 @@
             width: 100%;
             object-fit: cover;
             border-radius: 15px 15px 0 0;
+            @include media (1200px) {
+                height: 230px;
+            }
         }
         &--txt {
             display: flex;
@@ -48,5 +57,14 @@
         &--name {
             font-weight: bolder;
         }
+    }
+}
+
+.restaurants-1, .restaurants-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+    @include media (768px) {
+        flex-direction: row;
     }
 }
