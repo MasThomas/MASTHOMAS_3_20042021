@@ -66,23 +66,14 @@
     transform: rotate(360deg);
   }
 }
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  75% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+/*  @keyframes opacity
+{
+  0% {opacity: 1}
+  25% {opacity: 0.8}
+  50% {opacity: 0.75}
+  75% {opacity: 0.4}
+  100% {opacity: 0}
+} */
 @keyframes load {
   0% {
     opacity: 0;
@@ -92,7 +83,7 @@
     opacity: 1;
   }
 }
-html, body {
+html, body, h3 {
   margin: 0;
   padding: 0;
 }
@@ -113,7 +104,7 @@ html {
 }
 
 h2 {
-  margin: 50px 0 30px 20px;
+  margin: 50px 0 30px 6.5%;
   font-size: 1.6em;
 }
 
@@ -121,13 +112,8 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
 .btn {
-  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: none;
   border-radius: 30px;
   width: 200px;
@@ -136,11 +122,16 @@ h3 {
   font-weight: 700;
   margin: 30px 0 55px 0;
 }
+.btn:hover {
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+  box-shadow: 0px 0px 10px 5px #d0d0d0;
+}
 
 .btn-alt {
   background-color: #f6f6f6;
   height: 70px;
   width: 85%;
+  max-width: 285px;
   color: #000000;
   border: none;
   box-shadow: 0px 0px 10px 5px #f2f2f2;
@@ -154,6 +145,7 @@ h3 {
   background-color: #ffffff;
   height: 70px;
   width: 90%;
+  max-width: 285px;
   color: #000000;
   border: none;
   box-shadow: 0px 0px 10px 5px #f2f2f2;
@@ -178,7 +170,7 @@ h3 {
   font-size: 32px;
   position: absolute;
   display: block;
-  background-image: linear-gradient(-5deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(175deg, #FF79DA, #9356DC);
   background-clip: text;
   color: transparent;
   opacity: 0;
@@ -230,7 +222,16 @@ header i {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  margin: 0 0 20px 0;
+}
+.fonctionnement .buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 50px 0;
+}
+@media (min-width: 992px) {
+  .fonctionnement .buttons {
+    flex-direction: row;
+  }
 }
 .fonctionnement i {
   color: #7e7e7e;
@@ -277,8 +278,11 @@ header i {
   margin: 0;
 }
 .presentation .btn {
-  align-self: center;
   padding: 10px 0;
+  cursor: pointer;
+}
+.presentation a {
+  align-self: center;
 }
 
 .restaurants {
