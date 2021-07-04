@@ -13,11 +13,13 @@
         margin: 10px auto;
         border-radius: 20px;
         box-shadow: 0 0 10px 5px #f2f2f2;
+        position: relative;
         &--new {
             color: $clr-new;
             display: block;
             position: absolute;
-            margin: 1em 0 0 12em;
+            top: 15px;
+            right: 15px;
             width: 80px;
             height: 30px;
             background-color: $clr-tertiary;
