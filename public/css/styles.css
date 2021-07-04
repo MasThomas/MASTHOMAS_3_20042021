@@ -121,6 +121,7 @@ h2 {
   color: white;
   font-weight: 700;
   margin: 30px 0 55px 0;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(175deg, #ff93e1, #a16be0);
@@ -279,7 +280,6 @@ header i {
 }
 .presentation .btn {
   padding: 10px 0;
-  cursor: pointer;
 }
 .presentation a {
   align-self: center;
@@ -298,10 +298,20 @@ header i {
   height: 251px;
   width: 85%;
   background-color: #ffffff;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 20px;
   box-shadow: 0 0 10px 5px #f2f2f2;
   position: relative;
+}
+@media (min-width: 768px) {
+  .restaurants_card {
+    width: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  .restaurants_card {
+    height: 310px;
+  }
 }
 .restaurants_card--new {
   color: #008766;
@@ -322,6 +332,11 @@ header i {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
+@media (min-width: 1200px) {
+  .restaurants_card img {
+    height: 230px;
+  }
+}
 .restaurants_card--txt {
   display: flex;
   flex-direction: row;
@@ -338,10 +353,28 @@ header i {
   font-weight: bolder;
 }
 
+.restaurants-1, .restaurants-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+@media (min-width: 768px) {
+  .restaurants-1, .restaurants-2 {
+    flex-direction: row;
+  }
+}
+
 footer {
   background-color: #353535;
   color: #ffffff;
   padding: 10px 0 20px 30px;
+}
+@media (min-width: 576px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer p {
   font-family: Shrikhand;
@@ -373,9 +406,16 @@ footer i {
   margin: -30px 0 0 0;
   position: relative;
 }
+@media (min-width: 992px) {
+  .menu--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .menu--title {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
 }
@@ -393,13 +433,24 @@ footer i {
 .menu h1 {
   font-family: Shrikhand;
   font-size: 1.5em;
+  padding-right: 20px;
 }
 .menu h2 {
   font-weight: 300;
   font-size: 0.9em;
   border-bottom: solid #99E2D0;
-  width: 9%;
+  width: 30px;
   padding: 0 0 5px 0;
+}
+@media (min-width: 576px) {
+  .menu h2 {
+    margin: 50px auto 30px auto;
+  }
+}
+@media (min-width: 992px) {
+  .menu h2 {
+    margin: 50px auto 30px 0;
+  }
 }
 
 .btn-alt__white {
