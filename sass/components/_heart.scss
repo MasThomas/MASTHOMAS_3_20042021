@@ -3,27 +3,37 @@
     height: 35px;
     position: relative;
     &.icon--empty {
-        font-size:30px;
+        font-size:25px;
         position: absolute;
-        margin: 20px 0 0 -50px;
+        margin: 20px 0 0 35px;
         padding: 2px 0 0 0;
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
     }
     &.icon--full {
-        font-size: 32px;
+        font-size: 25px;
         position: absolute;
         display: block;
         background-image: $clr-shading;
         background-clip: text;
         color: transparent;
         opacity: 0;
-        margin: 20px 0 0 -51px;
+        margin: 20px 0 0 35px;
         padding: 2px 0 0 0;
-        transition: opacity 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        transform: scale(0);
     }
     &:hover {
         cursor: pointer;
-        &.icon--full {
-            opacity: 1;
-        }
+    }
+}
+
+.menu--heart:hover, .restaurants_card--heart:hover { 
+    .icon--full {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .icon--empty {
+        opacity: 0;
     }
 }
