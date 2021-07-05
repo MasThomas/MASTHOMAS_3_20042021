@@ -8,6 +8,8 @@
         font-weight: 700;
         margin: 30px 0 55px 0;
         cursor: pointer;
+        line-height: 50px;
+        text-align: center;
         &:hover {
                 background: linear-gradient(175deg, lighten($clr-secondary, 5), lighten($clr-primary,5));
                 box-shadow: 0px 0px 10px 5px darken($bg-grey,15);
