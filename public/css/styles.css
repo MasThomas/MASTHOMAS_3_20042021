@@ -49,38 +49,30 @@
   font-weight: 500;
 }
 
-@keyframes loading {
+@keyframes upDown {
   0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(90deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(270deg);
+    transform: translateY(-100%);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(100%);
   }
 }
-/*  @keyframes opacity
-{
-  0% {opacity: 1}
-  25% {opacity: 0.8}
-  50% {opacity: 0.75}
-  75% {opacity: 0.4}
-  100% {opacity: 0}
-} */
-@keyframes load {
+@keyframes fade {
   0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  70% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
     opacity: 0;
-    transform: translateY(50px);
+    z-index: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
+    z-index: -1;
   }
 }
 html, body, h3 {
@@ -456,7 +448,7 @@ footer i {
   font-weight: 300;
   font-size: 0.9em;
   border-bottom: solid #99E2D0;
-  width: 30px;
+  width: 40px;
   padding: 0 0 5px 0;
 }
 @media (min-width: 576px) {
@@ -548,23 +540,53 @@ footer i {
   line-height: 50px;
 }
 
-.loading-spinner {
-  background-color: rgba(255, 255, 255, 0.726);
-  position: absolute;
-  margin: auto 0;
-  z-index: 100;
+.container {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: opacity 2000ms forwards;
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+  animation: fade 3s forwards;
 }
-.loading-spinner .box {
-  width: 100px;
-  height: 100px;
+.container .dots {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+.container .dots--1 {
   background-color: #9356DC;
-  animation: loading 3000ms forwards;
+}
+.container .dots--2 {
+  background-color: #FF79DA;
+}
+.container .dots--3 {
+  background-color: #99E2D0;
+}
+.container .dot {
+  transform: translateY(-100%);
+  animation: upDown 0.5s ease-in-out alternate infinite;
+}
+.container .dots--1 {
+  animation-delay: 0.5s;
+}
+.container .dots--2 {
+  animation-delay: 0.25s;
 }
 
 /*# sourceMappingURL=styles.css.map */
