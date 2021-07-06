@@ -75,6 +75,15 @@
     z-index: -1;
   }
 }
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html, body, h3 {
   margin: 0;
   padding: 0;
@@ -151,7 +160,7 @@ h2 {
 }
 @media (min-width: 992px) {
   .btn-alt__white {
-    width: 100%;
+    width: 285px;
   }
 }
 
