@@ -22,7 +22,16 @@
 
 .btn-alt__white {
         @include button--alt ($bg-white, 15px, 90%);
+        @media (min-width: 320px) and (max-width:575px) {
+                max-width: 300px;
+        }
+        @media (min-width: 576px) and (max-width:991px) {
+                width: 350px;
+        }
         @include media (992px) {
-                width: 285px;
+                width: 300px;
+        }
+        @include media (1200px) {
+                width: 350px;
         }
 }

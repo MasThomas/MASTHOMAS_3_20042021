@@ -135,7 +135,6 @@ h2 {
   background-color: #f6f6f6;
   height: 70px;
   width: 85%;
-  max-width: 285px;
   color: #000000;
   border: none;
   box-shadow: 0px 0px 10px 5px #f2f2f2;
@@ -149,7 +148,6 @@ h2 {
   background-color: #ffffff;
   height: 70px;
   width: 90%;
-  max-width: 285px;
   color: #000000;
   border: none;
   box-shadow: 0px 0px 10px 5px #f2f2f2;
@@ -158,9 +156,24 @@ h2 {
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 320px) and (max-width: 575px) {
+  .btn-alt__white {
+    max-width: 300px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .btn-alt__white {
+    width: 350px;
+  }
+}
 @media (min-width: 992px) {
   .btn-alt__white {
-    width: 285px;
+    width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn-alt__white {
+    width: 350px;
   }
 }
 
