@@ -14,5 +14,9 @@
   "author": "Thomas Mas",
   "license": "ISC",
   "homepage": "https://github.com/MasThomas/MASTHOMAS_3_20042021",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss-cli": "^8.3.1"
+  }
 }
