@@ -603,7 +603,7 @@ footer i {
 }
 .container .dot {
   transform: translateY(-100%);
-  animation: upDown 0.5s ease-in-out alternate infinite;
+  animation: upDown 0.5s ease-in-out alternate 8;
 }
 .container .dots--1 {
   animation-delay: 0.5s;
