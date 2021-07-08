@@ -17,7 +17,10 @@
 }
 
 .btn-alt {
-        @include button--alt ($bg-grey, 25px, 85%)
+        @include button--alt ($bg-grey, 25px, 85%);
+        @include media (576px) {
+                max-width: 300px;
+        }
 }
 
 .btn-alt__white {
