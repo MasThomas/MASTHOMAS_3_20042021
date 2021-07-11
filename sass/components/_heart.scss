@@ -14,7 +14,7 @@
         font-size: 25px;
         position: absolute;
         display: block;
-        background-image: $clr-shading;
+        background-image: linear-gradient(to top right, $clr-secondary, 45%, $clr-primary);
         background-clip: text;
         color: transparent;
         opacity: 0;
