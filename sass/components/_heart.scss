@@ -23,12 +23,12 @@
         transition: all 0.5s ease-in-out;
         transform: scale(0);
     }
-    &:hover {
+    &:hover, &:active {
         cursor: pointer;
     }
 }
 
-.menu--heart:hover, .restaurants_card--heart:hover { 
+.menu--heart:hover, .menu--heart:active .restaurants_card--heart:hover, .restaurants_card--heart:active { 
     .icon--full {
         transform: scale(1.05);
         opacity: 1;

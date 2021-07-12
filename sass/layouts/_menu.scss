@@ -54,7 +54,7 @@
 .btn-alt__white {
     justify-content: space-between;
     overflow: hidden;
-    &:hover {
+    &:hover, &:active {
         .menu--check {
             margin-right: 0px;
             width: 60px;

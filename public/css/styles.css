@@ -126,7 +126,7 @@ h2 {
   line-height: 50px;
   text-align: center;
 }
-.btn:hover {
+.btn:hover, .btn:active {
   background: linear-gradient(175deg, #ff93e1, #a16be0);
   box-shadow: 0px 0px 10px 5px #d0d0d0;
 }
@@ -208,15 +208,15 @@ h2 {
   transition: all 0.5s ease-in-out;
   transform: scale(0);
 }
-.fa-heart:hover {
+.fa-heart:hover, .fa-heart:active {
   cursor: pointer;
 }
 
-.menu--heart:hover .icon--full, .restaurants_card--heart:hover .icon--full {
+.menu--heart:hover .icon--full, .menu--heart:active .restaurants_card--heart:hover .icon--full, .restaurants_card--heart:active .icon--full {
   transform: scale(1.05);
   opacity: 1;
 }
-.menu--heart:hover .icon--empty, .restaurants_card--heart:hover .icon--empty {
+.menu--heart:hover .icon--empty, .menu--heart:active .restaurants_card--heart:hover .icon--empty, .restaurants_card--heart:active .icon--empty {
   opacity: 0;
 }
 
@@ -290,11 +290,11 @@ header i {
   position: relative;
   top: 0;
 }
-.fonctionnement .btn-alt:hover {
+.fonctionnement .btn-alt:hover, .fonctionnement .btn-alt:active {
   background-color: #f5edff;
   box-shadow: 0px 0px 10px 5px #eeeeee;
 }
-.fonctionnement .btn-alt:hover i {
+.fonctionnement .btn-alt:hover i, .fonctionnement .btn-alt:active i {
   color: #9356DC;
 }
 
@@ -496,14 +496,14 @@ footer i {
   justify-content: space-between;
   overflow: hidden;
 }
-.btn-alt__white:hover .menu--check {
+.btn-alt__white:hover .menu--check, .btn-alt__white:active .menu--check {
   margin-right: 0px;
   width: 60px;
 }
-.btn-alt__white:hover .menu--check i {
+.btn-alt__white:hover .menu--check i, .btn-alt__white:active .menu--check i {
   transform: rotate(360deg);
 }
-.btn-alt__white:hover .menu--content {
+.btn-alt__white:hover .menu--content, .btn-alt__white:active .menu--content {
   width: 150px;
 }
 
